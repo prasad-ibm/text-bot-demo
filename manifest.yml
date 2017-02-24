@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: text-bot-demo
+  host: text-bot-demo
+  disk_quota: 1024M
+  services:
+  - Proquest-conversation-service
+  - text-bot-demo-cloudantNoSQLDB
+  command: npm start
